@@ -2,83 +2,109 @@
   box-sizing: border-box;
 }
 
-body{
-  margin: 0;
-  font-family: Helvetica, Arial;
-}
+
 
 img{
   max-width: 100%;
 }
 
-ul{
-  padding: 0;
-  margin: 0;
+li {
   list-style: none;
 }
 
+.octodex{
+  display: inline-block;
+  vertical-align: top;
+
+}
 
 .octocat{
-float: left;
-width: 445px;
-margin: 12px;
-}
-.octocat > a{
-  position: relative;
   display: inline-block;
-  border: 1px solid #D8D8D8;
-  border-radius: 5px;
-  padding: 8px;
+  width: 30%;
+  margin:8px;
 }
 
-.octocat > a::after{
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-top-color: #C3C3C3;
-  position: absolute;
-  right: 0px;
-  bottom: -20px;
+.octocat img{
+  border: 1.5px solid #cccccc;
+  padding: 2px;
+  border-radius: 2px;
 }
 
-.authors a{
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  border-radius: 5px;
-  border: 1px solid #FFFFFF;
-  overflow: hidden;
+div .image-footer{
+  display:inline-block;
+  max-height: 53;
 }
+
+.image-footer:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-top-color: #cacaca;
+    position: absolute;
+    right: 7px;
+    top: 0;
+}
+
 .image-footer{
-  font-weight: bold;
-  border-bottom: 1px solid #D8D8D8;
-}
-.image-number{
-color: #C6C6C6;
+  padding: 12px 0 12px 0;
+  width: 100%;
+  display: inline-block;
+  border-bottom: 1px solid #cacaca;
+  position: relative;
 }
 
-.image-number::before{
-  content: '#';
+.image-number:before{
+  content:"#";
+}
+
+.image-number{
+  padding: 18px 0 12px;
+  display: inline-block;
+  text-align: left;
+  color: #cacaca;
+  position:relative;
+}
+
+div .image-caption{
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+  float: right;
 }
 
 .image-caption{
+  text-align: right;
+  font-family: Helvetica;
+  position: relative;
+  font-weight: bold;
+}
+
+.image-caption span{
   display: inline-block;
+  color: #777;
+  padding: 12px 0px 10px 0px;
 }
 
-image-caption > span{
-  color: #6E6D6E;
-}
-
-image-caption >a{
-  color: black;
+.image-caption a{
+  display: inline-block;
+  color: #333;
+  font-weight: bold;
   text-decoration: none;
 }
-
-.authors{
+ul .authors{
   display: inline-block;
+  padding: 0px;
 }
-.authors li{
+
+ul .authors img{
+  padding-top: 8px;
+  border: none;
   display: inline-block;
+  max-height: 29px;
+
+body{
+  background-color: none;
+
 }
